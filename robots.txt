@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://moonskorch.github.io/dreamscape/sitemap.xml
+Sitemap: https://moonskorch.github.io/reverysky/sitemap.xml
