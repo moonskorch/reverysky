@@ -132,7 +132,7 @@ a:hover {
 }
 
 .hero {
-  padding: 82px 0 68px;
+  padding: 76px 0 54px;
 }
 
 .eyebrow {
@@ -328,7 +328,7 @@ h2 {
 }
 
 .section {
-  padding: 52px 0 68px;
+  padding: 34px 0 46px;
 }
 
 .section-title {
@@ -342,12 +342,9 @@ h2 {
   color: var(--muted);
 }
 
-.project-update-section {
-  padding-top: 22px;
-}
-
 .project-update-grid {
   padding-top: 0.25rem;
+  align-items: flex-start;
   border-top: 1px solid rgba(176, 205, 230, 0.18);
 }
 
@@ -360,11 +357,6 @@ h2 {
   margin: 0.65rem 0 0;
   max-width: 520px;
   color: #c7d7e8;
-}
-
-.availability-section {
-  padding-top: 16px;
-  padding-bottom: 20px;
 }
 
 .availability-card {
@@ -438,14 +430,6 @@ h2 {
     0 7px 14px rgba(10, 30, 50, 0.28),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
   transform: translateY(-1px);
-}
-
-.screenshots-section {
-  padding-top: 18px;
-}
-
-.video-showcase-section {
-  padding-top: 18px;
 }
 
 .video-showcase-layout {
@@ -725,7 +709,11 @@ h2 {
 
 @media (max-width: 767.98px) {
   .hero {
-    padding: 64px 0 54px;
+    padding: 56px 0 42px;
+  }
+
+  .section {
+    padding: 28px 0 34px;
   }
 
   .hero-title-image {
