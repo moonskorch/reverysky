@@ -49,7 +49,7 @@
     </section>
 
     <section class="section">
-      <div class="container support-grid">
+      <div class="container support-options">
         <article class="support-card">
           <p class="product-label">Donation link</p>
           <h2>Boosty</h2>
@@ -58,10 +58,114 @@
             <a class="button" href="https://boosty.to/reverysky/donate" target="_blank" rel="noopener noreferrer">Support on Boosty</a>
           </div>
         </article>
-        <article class="support-card">
-          <p class="product-label">Wallets</p>
+
+        <article class="support-card crypto-support-card" id="crypto">
+          <p class="product-label">Direct wallet donations</p>
           <h2>Cryptocurrency</h2>
-          <p>Crypto wallet addresses will be added later.</p>
+          <p class="crypto-intro">Choose an asset below. Scan the QR code from a wallet app or copy the public address. Please use the exact network shown for each asset.</p>
+
+          <div class="crypto-wallet-grid">
+            <article class="crypto-wallet">
+              <div class="crypto-wallet-heading">
+                <div>
+                  <h3>Litecoin <span class="crypto-symbol">(LTC)</span></h3>
+                  <p class="crypto-network">Litecoin network</p>
+                </div>
+              </div>
+
+              <code class="crypto-address">LU1J2Navk1S2hamo3jw4QCbq5kf1BkMBeY</code>
+
+              <button
+                class="button crypto-copy"
+                type="button"
+                data-copy="LU1J2Navk1S2hamo3jw4QCbq5kf1BkMBeY"
+              >Copy address</button>
+
+              <details class="crypto-qr-details">
+                <summary>Show QR</summary>
+                <div class="crypto-qr-panel">
+                  <img
+                    class="crypto-qr"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASgAAAEoAQAAAADDfFG0AAABsklEQVR4nO1Zy24DQQizq/7/L7sHwzzSSw7tQiRGyW6ysrQWMoxhKLyxvt4BDWpQgxrUo6hvAKB/CwBFgSJ0Pu3KviheEOCoUQQhCNR+2pZ9VbzAVBdEK0v7aV/2ZfGKFYpaufgfb/xs1B0vh0mU7oB1ZV8WL6cdryTc97bsq+K11ERR9PVMyq7si+K19MR9F45OqSv7IhQBgnYSgEjBf4t5NUQtP0Fh748EAWekanh1Ra36JX8Fe1U6OSNDu7J/HkWdt/BeDpcQCdqXfRlKBBnZJ4ByBUvn2pz98ygCkFz4EWFSftqzfxxFwHriEhgjIUdf1+Ll7D3KAeC2e/z9r3X4e2rp6zD4k4/XsobyGgF67SPbsq/y9yLPmu+67/I/9eta0T9mH3Q03unBanh1RXl+r3OGT0VDFHP8El5dUXsPRMYtd0hshXVlX6Uv/5Zl5s2RobMiXl1R1/kQIXFPwQCEALuyL5znrMnEMhXIkU5f9sUoxmUdQmZ9+wj2j6Cu86G0qi7zIqKLbMu+bp6jcPjK1sgT19kfX9Z1PnQ033Rejl99WZf/euSNgxrUoAb1N6gfQAOndugKNhwAAAAASUVORK5CYII="
+                    alt="QR code for Litecoin donation address"
+                    width="184"
+                    height="184"
+                  />
+                  <p>Scan with your wallet app.</p>
+                </div>
+              </details>
+
+              <p class="crypto-note">Send Litecoin (LTC) on the Litecoin network.</p>
+            </article>
+
+            <article class="crypto-wallet">
+              <div class="crypto-wallet-heading">
+                <div>
+                  <h3>Tether USD <span class="crypto-symbol">(USDT)</span></h3>
+                  <p class="crypto-network">TRON network (TRC20)</p>
+                </div>
+              </div>
+
+              <code class="crypto-address">TMv2G46LgYSUAX4qycfe33gPsCH3LoSvmH</code>
+
+              <button
+                class="button crypto-copy"
+                type="button"
+                data-copy="TMv2G46LgYSUAX4qycfe33gPsCH3LoSvmH"
+              >Copy address</button>
+
+              <details class="crypto-qr-details">
+                <summary>Show QR</summary>
+                <div class="crypto-qr-panel">
+                  <img
+                    class="crypto-qr"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASgAAAEoAQAAAADDfFG0AAABp0lEQVR4nO1Zy24DIRCzq/z/L7uHebA0rZRDxfgA2iTsyFIsa2DMQOGD8fUJ6KIu6qIu6ijqBQCMuWIuUISeUVf2Q3qVUiERIUBUR33ZT+kFhmbK/IKoFfVlP44iFZ9ajSa8bFCv7Y2RZRSuXr+P1CuWXemkmKK9rCv7Kb06mSiIoCjqkWKu7M+jqP0ttnpqj7uyH0IRIMishyIFkTe//kKFd4glGG4iPFhbMmv2R1Gx7tptscQLK1Y7viv7MX/P+gJAKKcqyVzZD+UXoXgyhvJfunr9GOxDovqXWnVyipcrqnYuAAiZVnjp6Mp+sD9R2VQmgqtF4ct+rj8R3kFatTE1vPm1jfYTfCQZy5HlzJb9lL8XCZDZLoy6mF71+tV3lPrphs6zRW3O/jyKQHvU8FwpGDnKyxC19SHWJo/VBJvhZY1ijNzlW61+8WZ/FLXdD7EvhtKoKmK27Of8V8kDiUIfIPMQ7sp+GMXV8qIEVXpN8zJCbfdDKotKxbT2fFf2Y3pVIWS1VfEI+LKf0qs6hYqSmFaMt5/zNvZ7oBP/eFEXdVEX9T+ob58YpHD3ov48AAAAAElFTkSuQmCC"
+                    alt="QR code for Tether USD donation address"
+                    width="184"
+                    height="184"
+                  />
+                  <p>Scan with your wallet app.</p>
+                </div>
+              </details>
+
+              <p class="crypto-note">Send USDT via TRON (TRC20) only.</p>
+            </article>
+
+            <article class="crypto-wallet">
+              <div class="crypto-wallet-heading">
+                <div>
+                  <h3>Toncoin <span class="crypto-symbol">(TON)</span></h3>
+                  <p class="crypto-network">TON network</p>
+                </div>
+              </div>
+
+              <code class="crypto-address">UQApoO9uFm2Q2hmniZHUydIrZqvq9lwmfFDT63OKNfv8EVCk</code>
+
+              <button
+                class="button crypto-copy"
+                type="button"
+                data-copy="UQApoO9uFm2Q2hmniZHUydIrZqvq9lwmfFDT63OKNfv8EVCk"
+              >Copy address</button>
+
+              <details class="crypto-qr-details">
+                <summary>Show QR</summary>
+                <div class="crypto-qr-panel">
+                  <img
+                    class="crypto-qr"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUgAAAFIAQAAAAAab1qeAAACF0lEQVR4nO2aUW+EMAyD7Yn//5e9BzuF2xOchGhZTtoExyc1F7W1k0Lh5OfnLNhkk002+S/IDQDoa4EQqNxrXEE3jf4+cgPgfIGASGdXIChqPHk6zsVIkgBICFAmqtPoJ7PEOT25fdzJCz4LXbx79PeR298v6H1T8By9d/T3kclnMkcRIqghTXtOV/lFM+SzFrYowhmFqMOTp+NchdyAwxy0pFNA/b939PeRnoRWHtkyAVCWPvL983GuQiafZZByt8u7gjwd52IkbeXBMvWCqJh5zhPn9CSTM3tOUV7nnqtVbbLrzctk0gkdsikIUnI+SZyTkyzn6eIoylRtkTimzudpsvR9V6TYTjt757XzeY1MB2R49+ydtG3qfshX+h4X6qYSkI1UtSHMEecipG07RWh4eBfvVPWZZohzfvJYHyWjHJOS0afeP0+T8Z+7C03JuR96oPP5BUnQXWS36kQKyhba5x3f1e9MtV4WKfre8/MbfQf9p7qMVWp9v0RWf37XJY3ak4cq6ek4FyM/z4t8zEmRIP+Qd4z+NnLXnfTqUBWnJan16DT58X6ITzsAIL3PXZeejnMV8pCweE8NXVd16vt9m9Nk9CirfDQ/6qgDVXM+HeeaZDWWqLwjIojs/fPy/KxPufvq1Y/j46fjXIyUBEDyGYf3Tc/Q9kuXSEgq2ynfY3/LJteSpFV+0QT6/tjoTTbZZJPrkr9g9QeQSsl0AQAAAABJRU5ErkJggg=="
+                    alt="QR code for Toncoin donation address"
+                    width="184"
+                    height="184"
+                  />
+                  <p>Scan with your wallet app.</p>
+                </div>
+              </details>
+
+              <p class="crypto-note">Send Toncoin (TON) on the TON network.</p>
+            </article>
+          </div>
+
+          <p class="crypto-warning">Please double-check the asset and network before sending. Crypto transfers cannot be reversed.</p>
         </article>
       </div>
     </section>
